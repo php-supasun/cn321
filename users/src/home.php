@@ -55,17 +55,20 @@ if (isset($_GET['user'])) {
             <div class="col-lg-1">
                 <nav>
                     <br>
-                    <form class="form-inline my-2 my-lg-4 mr-2" action="new-upload.php" method="POST">
-                        <input type="hidden" name="user" value="<?php echo $profile_data['username'] ?>">
-                        <button class="btn btn-primary" name="edit" type="submit">New Upload</button>
-                    </form>
                 </nav>
             </div>
             <div class="col-lg-10">
                 <div class="container">
                     <br>
                     <br>
-                    <h3>Recent upload</h3>
+                    <form class="form-inline my-2 my-lg-4 mr-2" action="new-upload.php" method="POST">
+                        <input type="hidden" name="user" value="<?php echo $profile_data['username'] ?>">
+                        <h3 style="text-align:center;width:100%">Recent upload</h3>
+                        <button class="btn btn-primary" name="edit" type="submit">New Upload</button>
+                        
+                  
+                    </form>
+                    
                     <div class="row text-center text-lg-left" id="image-container">
                         <?php while ($row = $get_image->fetch_assoc()): ?>
                             <div class="col-lg-3 col-md-4 col-xs-6 mb-2">

@@ -72,7 +72,7 @@ if (isset($_POST['edit'])) {
                 </div>
 
                 <div class="form-group">
-                    <label>test:</label><br>
+                    <label>อาชีพ:</label><br>
                     <input type="text" name="test" value="<?php echo $user_data['test'] ?>" class="form-control"/>
                 </div>
 

@@ -75,7 +75,7 @@ if (isset($_GET['user'])) {
                 <td><?php echo $profile_data['address'] ?></td>
             </tr>
             <tr>
-                <td>test:</td>
+                <td>อาชีพ:</td>
                 <td><?php echo $profile_data['test'] ?></td>
             </tr>
         </table>
