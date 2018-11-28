@@ -28,7 +28,7 @@ session_start();
         </form>
         
     <?php elseif (isset($_SESSION['username'])) :
-        header("location: profile.php?user=" . $_SESSION['username']); 
+        header("location: home.php?user=" . $_SESSION['username']); 
     endif;
     ?>
 
